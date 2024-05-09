@@ -27,9 +27,7 @@ public:
         
         for (int i = 0; i < s.length(); i++) {
             if ((s.length() - 1) != i) {
-				std::cout << "We are not at the end of the string\n";
                 if (isAhead(s[i], s[i + 1])) {
-					std::cout << "Is ahead with numbers:" << s[i] << " and " << s[i + 1] << std::endl;
 					number += (RtN(s[i + 1]) - RtN(s[i]));
 					i++;
 				}
@@ -57,7 +55,6 @@ public:
     }
 
     bool isAhead(char firstNum, char secondNum) {
-        std::cout << "if " << firstNum << " is ahead of " << secondNum << "\n";
         if (RtN(firstNum) < RtN(secondNum)) {
             return true;
         }
