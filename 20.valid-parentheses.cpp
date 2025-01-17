@@ -4,6 +4,14 @@
  * [20] Valid Parentheses
  */
 
+/* Accepted
+ * 100/100 cases passed (0 ms)
+ * Your runtime beats 100 % of cpp submissions
+ * Your memory usage beats 83.98 % of cpp submissions (8.5 MB)
+*/
+
+
+
 // @lc code=start
 class Solution {
 public:
@@ -33,14 +41,6 @@ public:
          * 1  1  2  1  0  1  0  0
          * b  c  c  c  c  s  s  b
          * 
-         * Previous char
-         * if older position closes, goes down
-         * dont delete
-         * make list of open positions iterated over
-         * 
-         * find first close, 
-         * loop back until hit open, check for same type, fail/delete, -1 index
-         * 
          * index 0-
          * create a list of opens, 
          * check if most recent open matches close
@@ -50,40 +50,23 @@ public:
         int i = 0;
         if (s.size() % 2 == 1) {return false;}
         while (s.size() > 1) {
-            //std::cout << s[i] << std::endl;
             if (s[i] == ")"[0] || s[i] == "]"[0] || s[i] == "}"[0]) {
-                //std::cout << "ender" << std::endl;
                 if (stack.size() == 0 || flip(s[i]) != stack[stack.size()-1]) {
                     return false;
                 }
-                //std::cout << "flip: " << flip(s[i]) << "stack: " << stack[stack.size()-1] << std::endl;
-                //s = removeIndexs(s, i-1, i);
                 s.erase(s.begin() + i-1, s.begin() + i+1);
-                //std::cout << "Removed: " << s << std::endl;
                 i -= 1;
                 stack.erase( stack.begin() + stack.size() - 1);
-                //std::cout << s << std::endl;
             } else if (s[i] == "("[0] || s[i] == "["[0] || s[i] == "{"[0]) {
                 stack.push_back(s[i]);
                 i++;
             } else {
                 return false;
             }
-            //std::cout << "end, i:" << i << std::endl;
-
         }
         return true;
 
 
-    }
-
-    /*
-    from 0 to index, from index + 1 to index2 - index1 - 1, to index2 + 1 to size-index2-1
-    a b c d e f g
-    0 1 2 3 4 5 6
-    */
-    string removeIndexs(string s, int in1, int in2) {
-        return s.substr(0, in1)  + s.substr(in1+1, in2-in1-1)  + s.substr(in2+1, s.size()-in2-1);
     }
 
     char flip(char s) {
