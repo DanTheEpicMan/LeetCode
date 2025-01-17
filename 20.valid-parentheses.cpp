@@ -57,7 +57,8 @@ public:
                     return false;
                 }
                 //std::cout << "flip: " << flip(s[i]) << "stack: " << stack[stack.size()-1] << std::endl;
-                s = removeIndexs(s, i-1, i);
+                //s = removeIndexs(s, i-1, i);
+                s.erase(s.begin() + i-1, s.begin() + i+1);
                 //std::cout << "Removed: " << s << std::endl;
                 i -= 1;
                 stack.erase( stack.begin() + stack.size() - 1);
