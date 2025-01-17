@@ -50,25 +50,25 @@ public:
         int i = 0;
         if (s.size() % 2 == 1) {return false;}
         while (s.size() > 1) {
-            std::cout << s[i] << std::endl;
+            //std::cout << s[i] << std::endl;
             if (s[i] == ")"[0] || s[i] == "]"[0] || s[i] == "}"[0]) {
-                std::cout << "ender" << std::endl;
+                //std::cout << "ender" << std::endl;
                 if (stack.size() == 0 || flip(s[i]) != stack[stack.size()-1]) {
                     return false;
                 }
-                std::cout << "flip: " << flip(s[i]) << "stack: " << stack[stack.size()-1] << std::endl;
+                //std::cout << "flip: " << flip(s[i]) << "stack: " << stack[stack.size()-1] << std::endl;
                 s = removeIndexs(s, i-1, i);
-                std::cout << "Removed: " << s << std::endl;
+                //std::cout << "Removed: " << s << std::endl;
                 i -= 1;
                 stack.erase( stack.begin() + stack.size() - 1);
-                std::cout << s << std::endl;
+                //std::cout << s << std::endl;
             } else if (s[i] == "("[0] || s[i] == "["[0] || s[i] == "{"[0]) {
                 stack.push_back(s[i]);
                 i++;
             } else {
                 return false;
             }
-            std::cout << "end, i:" << i << std::endl;
+            //std::cout << "end, i:" << i << std::endl;
 
         }
         return true;
