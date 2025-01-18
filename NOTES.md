@@ -19,3 +19,12 @@ if (index != std::string::npos) {
 else {
     index is the index of the start of string
 }
+
+## Delete index for sting (and others)
+```
+string.erase(string.begin() + index) // erases the index in that string
+string.erase(string.begin() + index, sting.begin() + endindex) // erases range of strings, peram 2 is exclusive
+
+```
+
+## Listnode - slightly linked list
