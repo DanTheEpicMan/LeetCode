@@ -28,3 +28,9 @@ string.erase(string.begin() + index, sting.begin() + endindex) // erases range o
 ```
 
 ## Listnode - slightly linked list
+
+
+
+
+## Access member of pointer
+use -> instead of .
