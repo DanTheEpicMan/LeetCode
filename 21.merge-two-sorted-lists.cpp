@@ -1,10 +1,3 @@
-/*
- * @lc app=leetcode id=21 lang=cpp
- *
- * [21] Merge Two Sorted Lists
- */
-
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -18,36 +11,57 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        /**Plan
-         * combine lists into 1 big list
-         * poll list 2, keep seperate variable for its index
-         */
-
-        ListNode* currNode = list1;
-        ListNode* currlist2 = list2;
-        while(currNode->next != nullptr) {
-            std::cout << "Looped" << std::endl;
-            std::cout << "currNode->next: " << currNode->next << std::endl;
-            /**
-             * if above list1, insert list 2, iterate list 2, iterate list 1
-             * else iterate list 1
-             */
-            // if list 2 has a higher value
-            if (currlist2->val > currNode->val) {
-                //link to other linked list
-                ListNode* temp = currNode->next;
-                ListNode* temp2 = currlist2->next;
-                currNode->next = currlist2;
-                currlist2->next = temp;
-                currlist2 = temp2;
-            } else {
-                currNode = currNode->next;
-            }
+        
+        //Checks for NULL-ness
+        if (list1 == NULL) {
+            return list2;
+        } else if (list2 == NULL) {
+            return list1;
         }
 
-        //CHANGE CHANGE CHANGE CHANGE CHANGE
-        return list1;
+        
+        //Assumes both not null
+        ListNode* head;
+        if (list1->val < list2->val) {
+            head = new ListNode(list1->val, list1->next);
+            list1 = list1->next;
+        } else {
+            head = new ListNode(list2->val, list2->next);
+            list2 = list2->next;
+        }
+
+        ListNode* headStart = head;
+        
+        while(true) {
+            //Handaling NULL
+            if (list1 == NULL) {
+                head->next = list2;
+                break;
+            }
+            
+            if (list2 == NULL) {
+                head->next = list1;
+                break;
+            }
+
+            //Checking for list2 > list1
+            //Sets the value of new listnode
+            //Itterates LN
+            ListNode* newLN = new ListNode();
+            if (list2->val < list1->val) {
+                newLN->val = list2->val;
+                list2 = list2->next;
+            } else {
+                newLN->val = list1->val;
+                list1 = list1->next;
+            }
+
+            //Sets previous LN to point to new LN
+            head->next = newLN;
+
+            //Pointer now points to a new value in memory
+            head = head->next;
+        }
+        return headStart;
     }
 };
-// @lc code=end
-
