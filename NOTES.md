@@ -34,3 +34,6 @@ string.erase(string.begin() + index, sting.begin() + endindex) // erases range o
 
 ## Access member of pointer
 use -> instead of .
+
+## Inserting into list
+vectorName.insert(index, value)
