@@ -3,80 +3,14 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
-        <entry key="/tmp/leetcode/editor/en/[26]Remove Duplicates from Sorted Array.cpp">
+        <entry key="/tmp/leetcode/editor/en/[67]Add Binary.cpp">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[26]Remove Duplicates from Sorted Array.md" />
-              <option name="frontendQuestionId" value="leetcode.com26" />
+              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[67]Add Binary.md" />
+              <option name="frontendQuestionId" value="leetcode.com67" />
               <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[26]Remove Duplicates from Sorted Array.cpp" />
-              <option name="titleSlug" value="remove-duplicates-from-sorted-array" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[27]Remove Element.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[27]Remove Element.md" />
-              <option name="frontendQuestionId" value="leetcode.com27" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[27]Remove Element.cpp" />
-              <option name="titleSlug" value="remove-element" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[28]Find the Index of the First Occurrence in a String.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[28]Find the Index of the First Occurrence in a String.md" />
-              <option name="frontendQuestionId" value="leetcode.com28" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[28]Find the Index of the First Occurrence in a String.cpp" />
-              <option name="titleSlug" value="find-the-index-of-the-first-occurrence-in-a-string" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[2918]Minimum Equal Sum of Two Arrays After Replacing Zeros.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[2918]Minimum Equal Sum of Two Arrays After Replacing Zeros.md" />
-              <option name="frontendQuestionId" value="leetcode.com2918" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[2918]Minimum Equal Sum of Two Arrays After Replacing Zeros.cpp" />
-              <option name="titleSlug" value="minimum-equal-sum-of-two-arrays-after-replacing-zeros" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[35]Search Insert Position.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[35]Search Insert Position.md" />
-              <option name="frontendQuestionId" value="leetcode.com35" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[35]Search Insert Position.cpp" />
-              <option name="titleSlug" value="search-insert-position" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[58]Length of Last Word.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[58]Length of Last Word.md" />
-              <option name="frontendQuestionId" value="leetcode.com58" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[58]Length of Last Word.cpp" />
-              <option name="titleSlug" value="length-of-last-word" />
-            </LeetcodeEditor>
-          </value>
-        </entry>
-        <entry key="/tmp/leetcode/editor/en/[66]Plus One.cpp">
-          <value>
-            <LeetcodeEditor>
-              <option name="contentPath" value="/tmp/leetcode/editor/en/doc/content/[66]Plus One.md" />
-              <option name="frontendQuestionId" value="leetcode.com66" />
-              <option name="host" value="leetcode.com" />
-              <option name="path" value="/tmp/leetcode/editor/en/[66]Plus One.cpp" />
-              <option name="titleSlug" value="plus-one" />
+              <option name="path" value="/tmp/leetcode/editor/en/[67]Add Binary.cpp" />
+              <option name="titleSlug" value="add-binary" />
             </LeetcodeEditor>
           </value>
         </entry>
